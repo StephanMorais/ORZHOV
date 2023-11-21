@@ -5,5 +5,71 @@ background-color: black;
 color: white;
 font-family: 'Times New Roman', Times, serif;
 font-weight: bolder;
-
 }
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+p.imagem{
+    font-weight: bold;
+    font-size: larger;
+    text-indent: 10px;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    box-shadow: 1px 1px 6px gray;
+}
+
+h1.imagem{
+    background-color:rgba(0,0,0, 0);
+    color: white;
+}
+
+
+/*EDIÇÃO DE IMAGENS*/
+img{
+    position: relative;
+  
+   
+}
+figure.fotoLegenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 6px gray;
+}
+
+figure.fotoLegenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.fotoLegenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0, 0.4);
+    width: 100%;
+    height:100% ;
+    padding: 10%;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+figure.fotoLegenda:hover figcaption{
+    opacity:1;
+} 
+
+/*EDIÇÃO DA TAG DIV E DERIVADAS*/
+
+    div{
+        background-color: white;
+        color: black;
+        padding: 30px;
+    }
