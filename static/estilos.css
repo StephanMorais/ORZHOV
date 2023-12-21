@@ -44,6 +44,10 @@ p.imagem{
     color: white;
 }
 
+p.hierarquia{
+  margin-left: 5px;
+}
+
 
 /*EDIÇÃO DA H1 E H2 */
 h1{
@@ -67,7 +71,16 @@ h1.imagem{
     font-size: 450%;
  }
 
- H2#logo{
+ h1.logo{
+    background-color: rgba(0,0,0, 0);
+    color:black;
+    box-shadow: 0px 0px 0px white;
+    text-align: center center;
+    text-shadow: 0px 0px 4px white;  
+    font-size: 450%;
+ }
+
+ H2.logo{
 
  font-style: italic;
  color: white;
@@ -75,6 +88,15 @@ h1.imagem{
  text-shadow: 1px 1px 4px black;
  
  }
+
+ H2#logo{
+
+    font-style: italic;
+    color:black;
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+    
+    }
 
  H2#OURO{
     text-align: center;
@@ -211,7 +233,18 @@ figure.fotoLegenda:hover figcaption{
         width: 60%;
         float: left;
         border-right: 1px solid black;
-        padding-right: 5%;
+        padding-right: 3%;
+        padding-left: 3%;
+
+
+    }
+
+
+    section#estrutura{
+        display: block;
+        width: 60%;
+        float: left;
+       
 
 
     }
@@ -222,6 +255,16 @@ aside#moeda{
     width: 30%;
     float: right;
 }
+
+aside#hierarquia{
+    display: block;
+    width: 30%;
+    float: right;
+    border-left:1px solid black ;
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
     
 /* EDIÇÃO DA TAG FOOTER*/
 footer#principal{
@@ -230,4 +273,5 @@ footer#principal{
     text-align: center;
 
 }
+
     
