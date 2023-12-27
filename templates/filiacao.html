@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <title>
-            CATEDRAL ORZHOV - HOME
+           FILIAÇÃO
         </title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='estilos.css')}}"/>
@@ -31,5 +31,82 @@
         </header>
     </div>
         <div id="principal">
+
+            <H1>FILIAÇÃO</H1>
+            <H2 id="logo">Para se filiar, basta preencher o formulário abaixo.<sup>*1</sup></H2>
+
+            <figure class="fotoLegenda" id="capela" >
+                <img src="{{url_for('static',filename='bispo.jpg')}}"> <figcaption id="capela"><h1 class="imagem">FILIAÇÃO</h1>
+                    <p class="imagem">Para se filiar, basta preencher o formulário abaixo e aguardar o retorno.</p>
+                </figcaption>
+               
+            </figure>
+
+            <div id="area">
+        <form action="/login" id="formulario" method="post">
+            <fieldset>
+                <legend><h2>FORMULÁRIO DE FILIAÇÃO</h2></legend>
+            <label for="nome">NOME</label>
+            <input type="text" name="nome" id="nome" required placeholder="DIGITE SEU NOME"><BR/>
+
+            <BR><label for="guilda">VOCÊ JÁ FEZ/FAZ PARTE DE ALGUMA OUTRA GUILDA?</label>
+                <select id="guilda" name="guilda">
+                    <option value="AZ">AZORIUS</option>
+                    <option value="BR">BOROS</option>
+                    <option value="SL">SELESNIA</option>
+                    <option value="DM">DIMIR</option>
+                    <option value="IZ">IZZET</option>
+                    <option value="SM">SIMIC</option>
+                    <option value="RK">RAKDOS</option>
+                    <option value="GR">GOLGARI</option>
+                    <option value="N">NENHUMA</option>
+                    
+                </select><BR>
+
+            <br><label for="GRUUL" id="GRUUL">***NÃO ACEITAMOS PEDIDO DE FILIAÇÃO DE MEMBROS OU EX-MEMBROS DA GUILDA GRUUL***</label><BR>
+            
+        <BR><label for="profissão">PROFISSÃO</label>
+        <input type="text" name="profissão" id="profissão" size="40" required placeholder="DIGITE SUA ULTIMA/ATUAL OCUPAÇÃO"><BR/>
+
+        <BR><label for="RENDA">SUA SITUAÇÃO ECONÔMICA ATUAL:</label>
+      GRUUL<input type="range" name="RENDA" id="RENDA" min="1" max="10">ORZHOV<BR/>
+
+      <BR><label for="cor">COM QUAL COR DE MANA PRIMARIA VOCÊ SE IDENTIFICA?</label>
+        <input type='color' id='cor' name='cor'><BR>
+
+            <br>
+            <fieldset><legend>COMPROVANTE DE PAGAMENTO DA TAXA DE FILIAÇÃO EMITIDA PELA GUILDA (2 MARCOS DE OURO)</legend>
+           <input type="file" id="renuncia" name="renuncia" ></fieldset><br>
+
+
+        <BR><fieldset><legend>DECLARAÇÃO DE CIÊNCIA</legend><br>
+            <input type="checkbox" name="CIENCIA" id="CIENCIA" >Declaro estar ciente que, caso as informações deste formulário sejam falsas e não sejam retratadas no prazo de 48 horas úteis (taxa de retratação de 20 talentos de prata), ficarei sujeito á taxa de 20 marcos de ouro, podendo a dívida ser cobrada inclusive, após meu falecimento e de meus descendentes.<BR/></fieldset>
+
+            <br>
+	    <input type="reset" value="Reset">
+	    <input type="submit" value="Enviar">
+
+    </fieldset>
+
+
+
+        </form>
+
+        
+    </div>
+    <br>
+    <footer id="principal">
+
+<div >
+    </br>Copright &copy;2023- Stephan Morais</footer></br>
+        <sup>1*</sup>O formulário de cadastro, uma vez enviado, não comporta desistência, salvo por decisão do recrutador ORZHOV e mediante ao pagamento de uma taxa de 30 talentos de prata em até 2 dias úteis após a cientificação da decisão.
+        <br>
+        <sup>*2</sup>Em caso de recusa da inscrição, a taxa paga será utilizada para a cobrir os gastos burocráticos, não cabendo qualquer reembolso.
+    
+    </footer>
+    </div>
+
     </body>
+
+    
 </html>

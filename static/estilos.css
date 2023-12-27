@@ -274,4 +274,26 @@ footer#principal{
 
 }
 
-    
+   /*FORMATAÇÃO DO FORMULÁRIO*/
+   
+   #area{
+ position:relative;
+  left:26%;
+  top:40%;
+  width:50%;
+  height:100%;
+  align-items: center;
+
+   }
+
+   #area#formulario
+{
+  position:absolute;
+  display:block;
+ margin: 50%;}
+
+ label#GRUUL{
+    color: red;
+ }
+
+ 
